@@ -6,7 +6,7 @@ metadata:
 spec:
   generators:
   - git:
-      repoURL: https://github.com/ivanklee86/homelab_v2.git
+      repoURL: https://github.com/ivanklee86/local-k8s.git
       revision: main
       directories:
       - path: kubernetes/applications/networking/*
@@ -16,7 +16,7 @@ spec:
     spec:
       project: default
       source:
-        repoURL: https://github.com/ivanklee86/homelab_v2.git
+        repoURL: https://github.com/ivanklee86/local-k8s.git
         targetRevision: HEAD
         path: "{{path}}"
       destination:
