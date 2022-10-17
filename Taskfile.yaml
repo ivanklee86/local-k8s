@@ -37,6 +37,7 @@ tasks:
     desc: "Get k3d cluster config."
     cmds:
       - k3d kubeconfig get {{.CLUSTER_NAME}}
+
   bootstrap:
     desc: "Bootstrap kubernetes"
     cmds:
