@@ -15,6 +15,12 @@ spec:
       - pause: {duration: 10}
       - setWeight: 80
       - pause: {duration: 10}
+      canaryService: canary-svc # required
+      stableService: stable-svc # required
+      trafficRouting:
+        smi:
+          rootService: root-svc
+          trafficSplitName: rollout-example-traffic-split
   revisionHistoryLimit: 2
   selector:
     matchLabels:
